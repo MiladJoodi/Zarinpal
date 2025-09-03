@@ -4,7 +4,7 @@ import React, { useState } from "react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { ThemeToggle } from "@/components/theme-toggle"
-import { Menu, X, ChevronDown, Sparkles, Zap, Shield, Users, ArrowRight, Globe, Star, ArrowLeft } from "lucide-react"
+import { Menu, X, Sparkles } from "lucide-react"
 import { motion, AnimatePresence } from "framer-motion"
 import { links, products } from "./data"
 import { useTheme } from "next-themes"
@@ -13,7 +13,6 @@ import MobileNav from "./MobileNav"
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
-  const [isProductsOpen, setIsProductsOpen] = useState(false)
   const { theme } = useTheme()
 
   return (
@@ -30,11 +29,10 @@ export default function Header() {
             />
           </Link>
 
-{/* Desktop Navigation */}
-        <DesktopNav links={links} products={products} />
-          
+          {/* Desktop Navigation */}
+          <DesktopNav links={links} products={products} />
 
-{/* Left Buttons */}
+          {/* Left Buttons */}
           <div className="hidden lg:flex items-center gap-4">
             <ThemeToggle />
             <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
@@ -54,7 +52,7 @@ export default function Header() {
             </motion.div>
           </div>
 
-{/* Mobile Menu Toggle */}
+          {/* Mobile Menu Toggle */}
           <motion.button
             className="lg:hidden p-2 rounded-xl hover:bg-muted transition-colors cursor-pointer"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -87,10 +85,9 @@ export default function Header() {
           </motion.button>
         </div>
 
-{/* Mobile Navigation */}
+        {/* Mobile Navigation */}
         <AnimatePresence>
-                    {isMenuOpen && <MobileNav links={links} products={products} setIsMenuOpen={setIsMenuOpen} />}
-
+          {isMenuOpen &&<MobileNav links={links} products={products} setIsMenuOpen={setIsMenuOpen} />}
         </AnimatePresence>
       </div>
     </header>

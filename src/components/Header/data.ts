@@ -36,8 +36,3 @@ export const links = [
   { href: "/about", label: "درباره ما", icon: Star },
   { href: "/contact", label: "تماس با ما", icon: Globe },
 ]
-
-export const mobileLinks = [
-  { href: "/dashboard", label: "زرین‌پال من", icon: "Users" },
-  { href: "/register", label: "ثبت نام رایگان", icon: "Sparkles" },
-]

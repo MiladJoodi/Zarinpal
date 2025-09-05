@@ -1,6 +1,8 @@
+"use client"
+
 import { motion } from "framer-motion"
 import { Badge } from "@/components/ui/badge";
-import {  Globe, Rocket, Shield, Sparkles, Star, TrendingUp, Zap } from "lucide-react";
+import { Globe, Rocket, Shield, Sparkles, Star, TrendingUp, Zap } from "lucide-react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import Typewriter from "@/components/typewriter";

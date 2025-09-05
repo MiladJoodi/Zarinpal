@@ -1,3 +1,5 @@
+"use client"
+
 import { motion } from "framer-motion"
 import { stats } from "@/lib/data";
 import StatCard from "../StatCard";

@@ -1,3 +1,5 @@
+"use client"
+
 import { motion } from "framer-motion"
 import { Badge } from "@/components/ui/badge";
 import { ArrowLeft, Rocket, Sparkles, PlayCircle, FileX2, LifeBuoy } from "lucide-react";

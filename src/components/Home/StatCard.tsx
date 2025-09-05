@@ -1,3 +1,5 @@
+"use client"
+
 import { motion } from "framer-motion";
 
 interface StatCardProps {
@@ -46,10 +48,10 @@ const StatCard = ({ stat, index }: StatCardProps) => {
                     {/* Content */}
                     <div className="relative z-10 p-6 h-full flex flex-col justify-center items-center text-center">
                         <div className="mb-4 relative">
-                            <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-blue-500 to-indigo-600 shadow-lg flex items-center justify-center group-hover:rotate-180 transition-transform duration-700">
-                                <div className="w-6 h-6 bg-white rounded-lg shadow-inner"></div>
+                            <div className="w-14 h-14 rounded-full bg-gradient-to-br from-blue-500 to-indigo-600 shadow-lg flex items-center justify-center group-hover:rotate-180 transition-transform duration-700">
+                                <div className="w-3 h-3 bg-white rounded-lg shadow-inner"></div>
                             </div>
-                            <div className="absolute inset-0 rounded-xl border-2 border-blue-300/50 animate-ping"></div>
+                            <div className="absolute inset-0 rounded-full border-2 border-blue-300/50 animate-ping"></div>
                         </div>
 
                         <div className="relative mb-3">

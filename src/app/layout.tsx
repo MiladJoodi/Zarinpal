@@ -4,6 +4,8 @@ import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
 import { Suspense } from "react"
 import { Analytics } from "@vercel/analytics/next"
+import Header from "@/components/Header/header"
+import Footer from "@/components/Home/Footer/Footer"
 
 // فقط فونت فارسی
 const vazirmatn = Vazirmatn({
@@ -35,7 +37,13 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange={false}
         >
-          <Suspense fallback={<div>Loading...</div>}>{children}</Suspense>
+          <Suspense fallback={<div>Loading...</div>}>
+
+            <Header />
+            {children}
+            <Footer />
+
+          </Suspense>
         </ThemeProvider>
         <Analytics />
       </body>

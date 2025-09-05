@@ -10,6 +10,7 @@ import { links, products } from "./data"
 import { useTheme } from "next-themes"
 import DesktopNav from "./DesktopNav"
 import MobileNav from "./MobileNav"
+import Image from "next/image"
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -20,12 +21,12 @@ export default function Header() {
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <Link href="/" className="flex items-center select-none">
-            <motion.img
-              src={theme === "dark" ? "logo/logo-white.svg" : "logo/logo-black.svg"}
+            <Image
+              src={theme === "dark" ? "/logo/logo-white.svg" : "/logo/logo-black.svg"}
               alt="زرین‌پال"
-              className="h-8 w-auto cursor-pointer"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
+              width={120}
+              height={32}
+              className="cursor-pointer"
             />
           </Link>
 
@@ -87,7 +88,7 @@ export default function Header() {
 
         {/* Mobile Navigation */}
         <AnimatePresence>
-          {isMenuOpen &&<MobileNav links={links} products={products} setIsMenuOpen={setIsMenuOpen} />}
+          {isMenuOpen && <MobileNav links={links} products={products} setIsMenuOpen={setIsMenuOpen} />}
         </AnimatePresence>
       </div>
     </header>

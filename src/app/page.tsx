@@ -10,7 +10,7 @@ import { Button } from "@/components/ui/button";
 import { stats } from "@/lib/data";
 import Typewriter from "@/components/typewriter";
 import HeroSection from "@/components/Home/HeroSection";
-import StatsSection from "@/components/Home/StatsSection";
+import StatsSection from "@/components/Home/StatsSection/StatsSection";
 import CallToActionSection from "@/components/Home/CallToActionSection";
 
 

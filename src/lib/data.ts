@@ -263,7 +263,7 @@ export const companyMilestones = [
     description: "ارائه ابزارهای هوشمند تحلیل و بهینه‌سازی",
   },
   {
-    year: "۱۴۰۳",
+    year: "۱۴۰۴",
     title: "گسترش بین‌المللی",
     description: "آغاز فعالیت در کشورهای منطقه",
   },

@@ -84,21 +84,21 @@ export const testimonials = [
     name: "علی احمدی",
     company: "فروشگاه آنلاین تکنو",
     text: "زرین‌پال باعث شد فروش آنلاین ما ۳۰۰٪ افزایش پیدا کنه. خیلی راضیم از خدماتشون.",
-    avatar: "/persian-businessman.png",
+    avatar: "/persian-businessman.webp",
   },
   {
     id: 2,
     name: "مریم کریمی",
     company: "استودیو طراحی نور",
     text: "زرین‌لینک کمک کرد تو اینستاگرام فروش داشته باشم. حالا درآمد ثابتی دارم.",
-    avatar: "/persian-businesswoman.png",
+    avatar: "/persian-businesswoman.webp",
   },
   {
     id: 3,
     name: "حسین رضایی",
     company: "شرکت فناوری پارس",
     text: "امنیت و سرعت زرین‌پال فوق‌العادهه. مشتریامون هم راضی‌ترن از پرداخت.",
-    avatar: "/persian-tech-manager.png",
+    avatar: "/persian-tech-manager.webp",
   },
 ]
 

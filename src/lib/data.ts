@@ -158,7 +158,7 @@ export const teamMembers = [
     name: "علی رضایی",
     position: "مدیرعامل و بنیان‌گذار",
     bio: "با بیش از ۱۵ سال تجربه در صنعت فناوری و پرداخت، رهبری زرین‌پال را بر عهده دارد.",
-    image: "/persian-tech-manager.png",
+    image: "/persian-tech-manager.webp",
     linkedin: "#",
     twitter: "#",
   },

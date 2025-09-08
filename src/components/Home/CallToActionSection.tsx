@@ -43,7 +43,7 @@ const CallToActionSection = () => {
                             <Link href="/register">
                                 <Button
                                     size="lg"
-                                    className="bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 hover:from-pink-600 hover:via-purple-600 hover:to-indigo-600 text-white font-bold text-2xl px-16 py-8 rounded-3xl group cursor-pointer shadow-2xl hover:shadow-purple-500/25 transition-all duration-300 select-none"
+                                    className="bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 hover:from-pink-600 hover:via-purple-600 hover:to-indigo-600 text-white font-bold text-xl px-16 py-6 rounded-3xl group cursor-pointer shadow-2xl hover:shadow-purple-500/25 transition-all duration-300 select-none"
                                 >
                                     <Rocket className="w-8 h-8 ml-4 group-hover:scale-110 group-hover:rotate-12 transition-transform" />
                                     شروع انقلاب

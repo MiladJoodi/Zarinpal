@@ -13,6 +13,8 @@ import {
     Code,
     Newspaper,
     PhoneCall,
+    ArrowLeft,
+    Headphones,
 } from "lucide-react";
 
 import { footerLinks, socialLinks } from "./data";
@@ -81,29 +83,25 @@ export default function Footer() {
                     </div>
                 </div>
 
-                {/* Support Section */}
                 <div className="mt-12 pt-8 border-t border-border flex flex-col md:flex-row items-center justify-between gap-4">
-                    <p className="text-center md:text-right font-bold text-lg">
+                    <p className="text-center md:text-right font-bold text-lg flex items-center gap-2">
+                        <Headphones size={18} />
                         پشتیبانی ۲۴ ساعته، ۷ روز هفته | شماره تماس:
-                        <span className="text-primary mr-2">۴۱۲۳۹-۰۲۱</span>
+                        <span className="text-primary mr-2">۰۲۱-۴۱۲۳۹</span>
                     </p>
+
                     <Link
                         href="/support"
                         className="flex items-center gap-2 text-primary hover:text-primary/80 transition-colors"
                     >
                         درخواست پشتیبانی
-                        <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-                            <path
-                                fillRule="evenodd"
-                                d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
-                                clipRule="evenodd"
-                            />
-                        </svg>
+                        <ArrowLeft size={18} />
                     </Link>
                 </div>
-                 {/* Copyright Section */}
+
+                {/* Copyright Section */}
                 <div className="mt-8 pt-4 border-t border-border text-center text-sm text-muted-foreground">
-                    © {new Date().getFullYear()} Milad Joodi. All rights reserved. | 
+                    © {new Date().getFullYear()} Milad Joodi. All rights reserved. |
                     <Link href="https://www.linkedin.com/in/joodi/" className="text-primary hover:underline mx-1">
                         LinkedIn
                     </Link>

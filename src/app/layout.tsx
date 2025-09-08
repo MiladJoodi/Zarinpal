@@ -4,7 +4,7 @@ import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
 import { Suspense } from "react"
 import { Analytics } from "@vercel/analytics/next"
-import Header from "@/components/Header/header"
+import Header from "@/components/Header/Header"
 import Footer from "@/components/Home/Footer/Footer"
 
 // فقط فونت فارسی

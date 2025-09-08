@@ -1,4 +1,4 @@
-import Header from "@/components/Header/header";
+import Header from "@/components/Header/Header";
 import HeroSection from "@/components/Home/HeroSection";
 import StatsSection from "@/components/Home/StatsSection/StatsSection";
 import CallToActionSection from "@/components/Home/CallToActionSection";

@@ -5,6 +5,7 @@ import Link from "next/link"
 import {
     Users,
     Mail,
+    ScanLine,
 } from "lucide-react"
 import { stats } from "@/lib/data"
 
@@ -41,8 +42,9 @@ const HeroSection = () => {
                                     <Button
                                         size="lg"
                                         variant="outline"
-                                        className="w-full border-white/30 text-white hover:bg-white/10 backdrop-blur-sm bg-white/5 text-lg px-8 py-4 cursor-pointer"
+                                        className="w-full border-white/30 text-white hover:bg-white/10 hover:text-white backdrop-blur-sm bg-white/5 text-lg px-8 py-4 cursor-pointer"
                                     >
+                                        <ScanLine className="ml-2" />
                                         محصولات ما
                                     </Button>
                                 </Link>
@@ -51,7 +53,7 @@ const HeroSection = () => {
                                         size="lg"
                                         className="w-full bg-accent text-accent-foreground hover:bg-accent/90 text-lg px-8 py-4 flex justify-center items-center cursor-pointer"
                                     >
-                                        <Mail className="w-5 h-5 ml-2" />
+                                        <Mail size={18} className="ml-2" />
                                         تماس با ما
                                     </Button>
                                 </Link>

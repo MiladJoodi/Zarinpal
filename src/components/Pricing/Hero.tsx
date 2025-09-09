@@ -35,7 +35,7 @@ const Hero: React.FC<HeroProps> = ({ isAnnual, setIsAnnual }) => {
 
                     <div className="flex items-center justify-center gap-4 mb-8">
                         <span className={`text-lg ${!isAnnual ? "text-accent font-bold" : "text-white/70"}`}>ماهانه</span>
-                        <Switch checked={isAnnual} onCheckedChange={setIsAnnual} className="data-[state=checked]:bg-accent data-[state=unchecked]:bg-gray-300 cursor-pointer" dir="ltr" />
+                        <Switch checked={isAnnual} onCheckedChange={setIsAnnual} className="data-[state=checked]:bg-accent data-[state=unchecked]:bg-gray-500 cursor-pointer" dir="ltr" />
                         <span className={`text-lg ${isAnnual ? "text-accent font-bold" : "text-white/70"}`}>
                             سالانه
                             <Badge className="mr-2 bg-accent/20 text-accent border-accent/30 text-xs">۲۰٪ تخفیف</Badge>

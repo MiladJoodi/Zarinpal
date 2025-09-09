@@ -10,6 +10,8 @@
   },
   "dependencies": {
     "@radix-ui/react-accordion": "^1.2.12",
+    "@radix-ui/react-label": "^2.1.7",
+    "@radix-ui/react-select": "^2.2.6",
     "@radix-ui/react-slot": "^1.2.3",
     "@radix-ui/react-switch": "^1.2.6",
     "@vercel/analytics": "^1.5.0",

@@ -24,7 +24,7 @@ const ContactMethods = () => {
                                 <Button
                                     size="sm"
                                     variant="outline"
-                                    className="w-full group-hover:bg-primary group-hover:text-primary-foreground bg-transparent"
+                                    className="w-full group-hover:bg-primary group-hover:text-primary-foreground bg-transparent cursor-pointer"
                                 >
                                     {method.action}
                                 </Button>

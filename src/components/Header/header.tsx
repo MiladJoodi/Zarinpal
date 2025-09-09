@@ -11,10 +11,14 @@ import { useTheme } from "next-themes"
 import DesktopNav from "./DesktopNav"
 import MobileNav from "./MobileNav"
 import Image from "next/image"
+import { usePathname } from "next/navigation"
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const { theme } = useTheme()
+  const pathname = usePathname()
+
+   if (pathname?.startsWith("/dashboard")) return null
 
   return (
     <header className="sticky top-0 z-50 w-full bg-background/80 backdrop-blur-xl border-b border-border shadow-sm">
@@ -36,16 +40,35 @@ export default function Header() {
           {/* Left Buttons */}
           <div className="hidden lg:flex items-center gap-4">
             <ThemeToggle />
+
+            {/* Dashboard Button */}
             <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
               <Link href="/dashboard">
-                <Button variant="ghost" className="text-primary hover:bg-muted font-medium cursor-pointer">
+                <Button
+                  variant="ghost"
+                  className="text-primary hover:bg-muted font-medium cursor-pointer"
+                >
                   زرین‌پال من
                 </Button>
               </Link>
             </motion.div>
+
+            {/* Login Button */}
+            <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
+              <Link href="/login">
+                <Button
+                  variant="ghost"
+                  className="text-primary hover:bg-muted font-medium cursor-pointer"
+                >
+                  ورود
+                </Button>
+              </Link>
+            </motion.div>
+
+            {/* Register Button */}
             <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
               <Link href="/register">
-                <Button className="bg-blue-700 hover:bg-blue-800 text-white font-medium cursor-pointer shadow-lg hover:shadow-xl transition-all duration-300">
+                <Button className="bg-blue-700 hover:bg-blue-800 text-white font-medium cursor-pointer shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-2">
                   <Sparkles className="w-4 h-4 ml-2" />
                   ثبت نام
                 </Button>

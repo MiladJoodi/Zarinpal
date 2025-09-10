@@ -4,7 +4,7 @@ export default function manifest(): MetadataRoute.Manifest {
     return {
         name: 'Zarinpal',
         short_name: 'Zarinpal',
-        description: 'Zarinpall - example PWA',
+        description: 'Zarinpall - PWA',
         start_url: '/',
         display: 'standalone',
         background_color: '#ffffff',

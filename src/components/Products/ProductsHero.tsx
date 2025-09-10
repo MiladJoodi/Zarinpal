@@ -21,7 +21,7 @@ const ProductsHero = () => {
 
                     <h1 className="text-4xl lg:text-6xl font-heavy mb-6 text-balance leading-tight">
                         ابزارهای قدرتمند
-                        <br />
+                        {" "}
                         <span className="text-accent">برای رشد کسب‌وکار</span>
                     </h1>
 
@@ -33,7 +33,7 @@ const ProductsHero = () => {
                         <Link href="/register">
                             <Button
                                 size="lg"
-                                className="bg-accent text-accent-foreground hover:bg-accent/90 font-bold text-lg px-8 py-4 group"
+                                className="bg-accent text-accent-foreground hover:bg-accent/90 text-lg px-8 py-4 group cursor-pointer"
                             >
                                 <Zap className="w-5 h-5 ml-2 group-hover:scale-110 transition-transform" />
                                 شروع رایگان
@@ -43,7 +43,7 @@ const ProductsHero = () => {
                             <Button
                                 size="lg"
                                 variant="outline"
-                                className="border-white/30 text-white hover:bg-white/10 backdrop-blur-sm bg-white/5 text-lg px-8 py-4"
+                                className="border-white/30 text-white hover:text-white hover:bg-white/10 backdrop-blur-sm bg-white/5 text-lg px-8 py-4 cursor-pointer"
                             >
                                 مشاوره رایگان
                             </Button>

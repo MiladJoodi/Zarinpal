@@ -17,7 +17,7 @@ const ProductsCTA = () => {
                         <Link href="/register">
                             <Button
                                 size="lg"
-                                className="bg-accent text-accent-foreground hover:bg-accent/90 font-bold text-lg px-8 py-4"
+                                className="bg-accent text-accent-foreground hover:bg-accent/90 text-lg px-8 py-4 cursor-pointer"
                             >
                                 شروع رایگان
                             </Button>
@@ -26,7 +26,7 @@ const ProductsCTA = () => {
                             <Button
                                 size="lg"
                                 variant="outline"
-                                className="border-white/30 text-white hover:bg-white/10 backdrop-blur-sm bg-white/5 text-lg px-8 py-4"
+                                className="border-white/30 text-white hover:text-white hover:bg-white/10 backdrop-blur-sm bg-white/5 text-lg px-8 py-4 cursor-pointer"
                             >
                                 تماس با فروش
                             </Button>

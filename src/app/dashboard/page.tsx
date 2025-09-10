@@ -584,7 +584,7 @@ export default function DashboardPage() {
         >
           <Button
             size="lg"
-            className="rounded-full shadow-2xl bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 text-white border-0 cursor-pointer h-16 w-16 p-0"
+            className="rounded-full shadow-2xl bg-gradient-to-r from-blue-500 to-blue-700 hover:from-blue-600 hover:to-blue-600 text-white border-0 cursor-pointer h-16 w-16 p-0"
           >
             <Plus className="h-6 w-6" />
           </Button>

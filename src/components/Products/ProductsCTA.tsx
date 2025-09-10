@@ -5,7 +5,7 @@ const ProductsCTA = () => {
     return (
         <section className="relative overflow-hidden">
             <div className="absolute inset-0 bg-gradient-to-r from-primary via-blue-600 to-primary">
-                <div className="absolute inset-0 bg-[url('/images/circuit.svg')] opacity-10"></div>
+                <div className="absolute inset-0 bg-[url('/images/circuit.png')] opacity-10"></div>
             </div>
 
             <div className="relative z-10 py-20 text-white">

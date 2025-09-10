@@ -6,6 +6,7 @@ import { Suspense } from "react"
 import { Analytics } from "@vercel/analytics/next"
 import Header from "@/components/Header/Header"
 import Footer from "@/components/Home/Footer/Footer"
+import RegisterSW from "@/components/RegisterSW"
 
 // فقط فونت فارسی
 const vazirmatn = Vazirmatn({
@@ -31,6 +32,7 @@ export default function RootLayout({
       <body
         className={`${vazirmatn.className} antialiased bg-background text-foreground transition-colors duration-300`}
       >
+        <RegisterSW />
         <ThemeProvider
           attribute="class"
           defaultTheme="light"

@@ -2,8 +2,8 @@ import type { MetadataRoute } from 'next'
 
 export default function manifest(): MetadataRoute.Manifest {
     return {
-        name: 'Zarinpall',
-        short_name: 'Zarinpall',
+        name: 'Zarinpal',
+        short_name: 'خوش آمدید',
         description: 'Zarinpall - example PWA',
         start_url: '/',
         display: 'standalone',

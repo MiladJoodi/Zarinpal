@@ -1,6 +1,6 @@
 # ZarinPal 🚀
 
-A modern, responsive, and interactive dashboard for ZarinPal, built entirely with Next.js, React, and TypeScript. Designed for managing products, support, FAQs, and user interactions with clean visuals and smooth animations. Supports **dark mode** out of the box 🌙 and full **PWA capabilities** for offline access and installability 📲
+A modern, responsive, and interactive dashboard for ZarinPal, built entirely with Next.js, React, and TypeScript. Designed for managing products, support, FAQs, and user interactions with clean visuals and smooth animations. Supports **dark mode** out of the box 🌙 and full **PWA capabilities** for offline access and installability 📲.
 
 🎬 [**Live Demo**](https://zarrinpal.netlify.app/)
 
